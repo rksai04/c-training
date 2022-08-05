@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <script>
+            function validateForm() {
+              var x = document.forms["myForm"]["fname"].value;
+              if (x == "" || x == null) {
+                alert("Name must be filled out");
+                return false;
+              }
+            }
+            </script>
+            <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+              }
+              
+              td, th {
+                border: 10px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+              }
+              
+              tr:nth-child(even) {
+                background-color: #dddddd;
+              }
+              </style>
+
+    </head>
+
+    <body>
+        <div style="height: 40px;padding: 5px;background-color: whiteSmoke;
+        -webkit-border-bottom-right-radius:5px;
+        -webkit-border-bottom-left-radius:5px;
+        -moz-border-radius-bottomright:5px;
+        -moz-border-radius-bottomleft:5px;
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;;"></div>
+
+        <div style="color:rgb(26, 26, 28);text-align:center;">
+            <br/>
+            Username:   &nbsp;&nbsp;    <input type="text" name="email"/><br/><br/>
+            Password:   &nbsp;&nbsp;    <input type="password" name="pass"/><br/><br/>
+
+            <br/>
+            <input type="submit" value="login" style="align-items: left;"/>
+        </div>
+
+
+        <div style="color:rgb(26, 26, 28);text-align:center;">
+            <br/>
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+                Company Name*: &nbsp;   <input type="text" name="fname"/><br/><br/>
+                Brand Name:    &nbsp;&nbsp;&nbsp;   <input type="password" name="pass"/><br/><br/>
+                <br/>
+                <input type="submit" value="Save Changes" style="align-items: left;"/>
+                <input type="submit" value="Create New" style="align-items: left;"/>
+                <input type="button" value="Clear" style="align-items: left;"/>
+            
+            </form>
+            
+
+            
+        </div>
+        <div style="height: 40px;padding: 5px;"></div>
+        <div style="height: 40px;padding: 5px;">
+            <table>
+                <tr>
+                  <th>Company Name</th>
+                  <th>Brand Name</th>
+                  
+                </tr>
+                
+              </table>
+        </div>
+
+        <div style=" background-color: whiteSmoke;
+        -webkit-border-bottom-right-radius:5px;
+        -webkit-border-bottom-left-radius:5px;
+        -moz-border-radius-bottomright:5px;
+        -moz-border-radius-bottomleft:5px;
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;;"></div>
+
+    </body>
+
+
+</html>
+
